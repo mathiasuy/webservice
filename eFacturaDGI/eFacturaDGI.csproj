@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{985BDFF0-A579-421B-A01E-634DA48F0C5B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eFacturaDGI</RootNamespace>
+    <AssemblyName>eFacturaDGI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\ControlEmisor.ascx" />
+    <Content Include="Controls\ControlIdDoc.ascx" />
+    <Content Include="Controls\ControlReceptor.ascx" />
+    <Content Include="Controls\ControlsItem\ControlFact.ascx" />
+    <Content Include="Controls\ControlsItem\ControlItem_Det_Fact_Exp.ascx" />
+    <Content Include="Controls\ControlsItem\ControlItem_Rem.ascx" />
+    <Content Include="Controls\ControlsItem\ControlItem_Rem_Exp.ascx" />
+    <Content Include="Controls\ControlsItem\ControlItem_Resg.ascx" />
+    <Content Include="Controls\ControlsItem\ControlRetencionPercepcion.ascx" />
+    <Content Include="Forms\Administrar.aspx" />
+    <Content Include="Forms\Cargar.aspx" />
+    <Content Include="Forms\CodRetenciones.aspx" />
+    <Content Include="Forms\Enviados.aspx" />
+    <Content Include="Forms\Formulario.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="XML\CFE.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ControlEmisor.ascx.cs">
+      <DependentUpon>ControlEmisor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlEmisor.ascx.designer.cs">
+      <DependentUpon>ControlEmisor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlIdDoc.ascx.cs">
+      <DependentUpon>ControlIdDoc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlIdDoc.ascx.designer.cs">
+      <DependentUpon>ControlIdDoc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlReceptor.ascx.cs">
+      <DependentUpon>ControlReceptor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlReceptor.ascx.designer.cs">
+      <DependentUpon>ControlReceptor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlFact.ascx.cs">
+      <DependentUpon>ControlFact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlFact.ascx.designer.cs">
+      <DependentUpon>ControlFact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Det_Fact_Exp.ascx.cs">
+      <DependentUpon>ControlItem_Det_Fact_Exp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Det_Fact_Exp.ascx.designer.cs">
+      <DependentUpon>ControlItem_Det_Fact_Exp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Rem.ascx.cs">
+      <DependentUpon>ControlItem_Rem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Rem.ascx.designer.cs">
+      <DependentUpon>ControlItem_Rem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Rem_Exp.ascx.cs">
+      <DependentUpon>ControlItem_Rem_Exp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Rem_Exp.ascx.designer.cs">
+      <DependentUpon>ControlItem_Rem_Exp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Resg.ascx.cs">
+      <DependentUpon>ControlItem_Resg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlItem_Resg.ascx.designer.cs">
+      <DependentUpon>ControlItem_Resg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlRetencionPercepcion.ascx.cs">
+      <DependentUpon>ControlRetencionPercepcion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlsItem\ControlRetencionPercepcion.ascx.designer.cs">
+      <DependentUpon>ControlRetencionPercepcion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrar.aspx.cs">
+      <DependentUpon>Administrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrar.aspx.designer.cs">
+      <DependentUpon>Administrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cargar.aspx.cs">
+      <DependentUpon>Cargar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Cargar.aspx.designer.cs">
+      <DependentUpon>Cargar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CodRetenciones.aspx.cs">
+      <DependentUpon>CodRetenciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\CodRetenciones.aspx.designer.cs">
+      <DependentUpon>CodRetenciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Enviados.aspx.cs">
+      <DependentUpon>Enviados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Enviados.aspx.designer.cs">
+      <DependentUpon>Enviados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Formulario.aspx.cs">
+      <DependentUpon>Formulario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Formulario.aspx.designer.cs">
+      <DependentUpon>Formulario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesCompartidas\EntidadesCompartidas.csproj">
+      <Project>{30285BFE-EF08-49F9-81C0-688AA2220CB9}</Project>
+      <Name>EntidadesCompartidas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcepcionesPersonalizadas\ExcepcionesPersonalizadas.csproj">
+      <Project>{D10846BE-037A-46F5-A454-5F59A84FE3C1}</Project>
+      <Name>ExcepcionesPersonalizadas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IdDoc\IdDoc.csproj">
+      <Project>{190D4E63-2C17-48BC-908C-0C2BEAB9744E}</Project>
+      <Name>IdDoc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Items\Items.csproj">
+      <Project>{EDDD76DC-E598-4D50-A924-28CACE331FCB}</Project>
+      <Name>Items</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{A815FEFB-FF25-4277-86C8-BA8D862D672E}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Receptores\Receptores.csproj">
+      <Project>{9394A793-47AB-49B6-A483-6B37ABD45124}</Project>
+      <Name>Receptores</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Totales\Totales.csproj">
+      <Project>{B9316856-5BBB-4C02-BAE4-F6D26868EB35}</Project>
+      <Name>Totales</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XSD\ACKCFE_DGI_118.xsd" />
+    <None Include="XSD\ACKCFE_Partes_118.xsd" />
+    <None Include="XSD\ACKRepDiario_118.xsd" />
+    <None Include="XSD\ACKSobre_119.xsd" />
+    <None Include="XSD\CAEType_v1.19.xsd" />
+    <None Include="XSD\CAE_v1.12.xsd" />
+    <None Include="XSD\CFEDGI_v1.19.xsd" />
+    <None Include="XSD\CFEEmpresas_v1.20.xsd" />
+    <None Include="XSD\CFEs_Anulados_x_RechazoDGI_1.11.xsd" />
+    <None Include="XSD\CFEType_v1.30.xsd" />
+    <None Include="XSD\CFE_Empresas_Type_v1.20.xsd" />
+    <None Include="XSD\DGITypes_v1.20.xsd" />
+    <None Include="XSD\EnvioCFE_entreEmpresasv1.32.xsd" />
+    <None Include="XSD\EnvioCFE_v1.31.xsd" />
+    <None Include="XSD\ReporteDiarioCFE_v1.22.xsd" />
+    <None Include="XSD\xenc-schema.xsd" />
+    <None Include="XSD\xmldsig-core-schema.xsd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1289</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

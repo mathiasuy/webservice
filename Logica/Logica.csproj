@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A815FEFB-FF25-4277-86C8-BA8D862D672E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Logica</RootNamespace>
+    <AssemblyName>Logica</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LCodRet.cs" />
+    <Compile Include="LEmisor.cs" />
+    <Compile Include="LFormasDePago.cs" />
+    <Compile Include="LIndicadorFacturaType.cs" />
+    <Compile Include="LIVAType.cs" />
+    <Compile Include="LModVentaType.cs" />
+    <Compile Include="LPaisType.cs" />
+    <Compile Include="LProductoServicio.cs" />
+    <Compile Include="LReceptor.cs" />
+    <Compile Include="LTipoCFEType.cs" />
+    <Compile Include="LTipoDocumentoType.cs" />
+    <Compile Include="LTipoMoneda.cs" />
+    <Compile Include="LTipoTraslado.cs" />
+    <Compile Include="LUnidadesDeMedida.cs" />
+    <Compile Include="LViaTransp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceptorValidacion.cs" />
+    <Compile Include="XMLAcces.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesCompartidas\EntidadesCompartidas.csproj">
+      <Project>{30285BFE-EF08-49F9-81C0-688AA2220CB9}</Project>
+      <Name>EntidadesCompartidas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcepcionesPersonalizadas\ExcepcionesPersonalizadas.csproj">
+      <Project>{D10846BE-037A-46F5-A454-5F59A84FE3C1}</Project>
+      <Name>ExcepcionesPersonalizadas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Items\Items.csproj">
+      <Project>{EDDD76DC-E598-4D50-A924-28CACE331FCB}</Project>
+      <Name>Items</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{F1FBEC73-3236-49CC-B006-F07D364ED27E}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Receptores\Receptores.csproj">
+      <Project>{9394A793-47AB-49B6-A483-6B37ABD45124}</Project>
+      <Name>Receptores</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

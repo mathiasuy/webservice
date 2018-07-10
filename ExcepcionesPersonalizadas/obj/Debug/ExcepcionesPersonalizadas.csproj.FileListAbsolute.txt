@@ -1,0 +1,14 @@
+C:\Users\Otro\Documents\Visual Studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\bin\Debug\ExcepcionesPersonalizadas.dll
+C:\Users\Otro\Documents\Visual Studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\bin\Debug\ExcepcionesPersonalizadas.pdb
+C:\Users\Otro\Documents\Visual Studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ExcepcionesPersonalizadas.dll
+C:\Users\Otro\Documents\Visual Studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ExcepcionesPersonalizadas.pdb
+d:\documentos\visual studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\bin\Debug\ExcepcionesPersonalizadas.dll
+d:\documentos\visual studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\bin\Debug\ExcepcionesPersonalizadas.pdb
+d:\documentos\visual studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ResolveAssemblyReference.cache
+d:\documentos\visual studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ExcepcionesPersonalizadas.dll
+d:\documentos\visual studio 2010\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ExcepcionesPersonalizadas.pdb
+C:\Users\user6\Documents\Visual Studio 2015\Projects\eFacturaDGI\ExcepcionesPersonalizadas\bin\Debug\ExcepcionesPersonalizadas.dll
+C:\Users\user6\Documents\Visual Studio 2015\Projects\eFacturaDGI\ExcepcionesPersonalizadas\bin\Debug\ExcepcionesPersonalizadas.pdb
+C:\Users\user6\Documents\Visual Studio 2015\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ExcepcionesPersonalizadas.csprojResolveAssemblyReference.cache
+C:\Users\user6\Documents\Visual Studio 2015\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ExcepcionesPersonalizadas.dll
+C:\Users\user6\Documents\Visual Studio 2015\Projects\eFacturaDGI\ExcepcionesPersonalizadas\obj\Debug\ExcepcionesPersonalizadas.pdb

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1FBEC73-3236-49CC-B006-F07D364ED27E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Persistencia</RootNamespace>
+    <AssemblyName>Persistencia</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PEmisor.cs" />
+    <Compile Include="PFormasDePago.cs" />
+    <Compile Include="PIndicadorFacturaType.cs" />
+    <Compile Include="PIVAType.cs" />
+    <Compile Include="PPaisType.cs" />
+    <Compile Include="PProductoServicio.cs" />
+    <Compile Include="PReceptor.cs" />
+    <Compile Include="PTipoCFEType.cs" />
+    <Compile Include="PTipoDocumentoType.cs" />
+    <Compile Include="PTipoMoneda.cs" />
+    <Compile Include="PCodRet.cs" />
+    <Compile Include="DatosConexion.cs" />
+    <Compile Include="PModVentaType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTipoTraslado.cs" />
+    <Compile Include="PUnidadesDeMedida.cs" />
+    <Compile Include="PViaTransp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesCompartidas\EntidadesCompartidas.csproj">
+      <Project>{30285bfe-ef08-49f9-81c0-688aa2220cb9}</Project>
+      <Name>EntidadesCompartidas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcepcionesPersonalizadas\ExcepcionesPersonalizadas.csproj">
+      <Project>{D10846BE-037A-46F5-A454-5F59A84FE3C1}</Project>
+      <Name>ExcepcionesPersonalizadas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Receptores\Receptores.csproj">
+      <Project>{9394A793-47AB-49B6-A483-6B37ABD45124}</Project>
+      <Name>Receptores</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Script\eFacturaDGI.sql" />
+    <Content Include="Script\Encabezados de Procedimientos.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
